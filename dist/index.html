@@ -14,6 +14,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="./css/main.css" />
     <title>Haisem Jemal | Front End Developer</title>
   </head>
@@ -23,13 +24,15 @@
     <header id="header-home">
       <div class="container">
         <nav id="main-nav">
-          <img src="./img/logo.png" alt="myPort" id="logo" />
-          <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+          <!-- Maybe throw a logo -->
+          <div class="contian">
+            <ul>
+              <li><a href="#header-home" class="current">Home</a></li>
+              <li><a href="#home-a">About</a></li>
+              <li><a href="#home-b">Work</a></li>
+              <li><a href="#resume">Resume</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="header-content">
           <h1>
@@ -37,13 +40,13 @@
             <span
               class="txt-type"
               data-wait="3000"
-              data-words='["Photographer","Designer","UI/UX Dev"]'
+              data-words='["Front End Dev","Back End Dev","Full Stack Dev"]'
             ></span>
           </h1>
           <p class="lead">
-            I specialize in graphic design, UI/UX and photography
+            I specialize in full stack web development
           </p>
-          <a href="#" class="btn-light">View My Work</a>
+          <a href="#home-b" class="btn-light">View My Work</a>
         </div>
       </div>
     </header>
@@ -51,127 +54,131 @@
     <section id="home-a" class="text-center py-2">
       <div class="container">
         <h2 class="section-title">
-          I Specialize In
+          About Me
         </h2>
         <div class="bottom-line"></div>
         <p class="lead">
-          Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications
+          Hello there! My name is Haisem and I am a full stack developer. <br/>I enjoy spendng my free time creating web applications/websites from scrath and learning more about web development.
         </p>
-        <div class="specials">
-          <div>
-            <i class="fas fa-file-alt fa-2x"></i>
-            <h3>Concepting</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa rerum minima aliquam ab error corporis quis officiis architecto expedita.</p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-2x"></i>
-            <h3>UI/UX</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa rerum minima aliquam ab error corporis quis officiis architecto expedita.</p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-2x"></i>
-            <h3>Visual Design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa rerum minima aliquam ab error corporis quis officiis architecto expedita.</p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-2x"></i>
-            <h3>Interaction</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa rerum minima aliquam ab error corporis quis officiis architecto expedita.</p>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Section B: -->
 
-    <section id="home-b"class="text-center py-2">
-      <div class="stats">
-        <div>
-          <ul>
-            <li><i class="fas fa-users fa-3x"></i></li>
-            <li class="stats-title">Clients</li>
-            <li class="stats-number">100</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-award fa-3x"></i></li>
-            <li class="stats-title">Awards</li>
-            <li class="stats-number">3</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-            <li class="stats-title">Hours Worked</li>
-            <li class="stats-number">3500</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-code-branch fa-3x"></i></li>
-            <li class="stats-title">Projects Completed</li>
-            <li class="stats-number">100</li>
-          </ul>
+    <section id="home-b" class="text-center py-2">
+      <h2 class="section-title">
+        Projects
+      </h2>
+      <div class="bottom-line"></div>
+
+      <div class="less">
+        <div class="projects-container">
+
+          <div class="box">
+            <div class="picture-container">
+              <img src="./img/Projects/restaurant.png" alt="">
+            </div>
+            <div class="content-container">
+              <div class="content">
+                <h3>Restaurant Website</h3>
+                <p>Single page website made for a restaurant.</p>
+                <div class="skills">
+                  <div class="skill">HTML5</div>
+                  <div class="skill">CSS/SASS</div>
+                  <div class="skill">Responsive</div>
+                </div>
+                <a href="https://www.google.com/" target="blank">
+                  <button class="links btn-dark">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://www.github.com/" target="blank">
+                  <button class="links btn-dark">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="picture-container">
+              <img src="./img/Projects/restaurant.png" alt="">
+            </div>
+            <div class="content-container">
+              <div class="content">
+                <h3>Real Estate Web App</h3>
+                <p>Single page website made for a restaurant.</p>
+                <div class="skills">
+                  <div class="skill">HTML5</div>
+                  <div class="skill">CSS/SASS</div>
+                  <div class="skill">Responsive</div>
+                </div>
+                <a href="https://www.google.com/" target="blank">
+                  <button class="links btn-dark">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://www.github.com/" target="blank">
+                  <button class="links btn-dark">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="picture-container">
+              <img src="./img/Projects/restaurant.png" alt="">
+            </div>
+            <div class="content-container">
+              <div class="content">
+                <h3>Restaurant Website</h3>
+                <p>Single page website made for a restaurant.</p>
+                <div class="skills">
+                  <div class="skill">HTML5</div>
+                  <div class="skill">CSS/SASS</div>
+                  <div class="skill">Responsive</div>
+                </div>
+                <a href="https://www.google.com/" target="blank">
+                  <button class="links btn-dark">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://www.github.com/" target="blank">
+                  <button class="links btn-dark">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+
         </div>
       </div>
+
     </section>
 
     <!-- Section C -->
-    <section id="home-c" class="text-center py-2">
+    <!-- <section id="home-c" class="text-center py-2">
       <div class="container">
         <h2 class="section-title">
-          My Creative Process
+          Place Holder
         </h2>
         <div class="bottom-line"></div>
         <p class="lead">
-          All of my UI/UX are based off of a practiced formula to get the result I am looking for
+          All of my UI/UX are based off of a practiced formula to get the result
+          I am looking for
         </p>
-        <div class="process">
-          <div>
-            <i class="fas fa-file-alt fa-4x process-icon my-2">
-              <div class="process-step">1</div>
-            </i>
-
-            <h3>Discuss The Project</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat ut, autem perferendis cumque doloribus saepe! Accusantium, totam? Voluptate, sequi?</p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-4x process-icon my-2">
-              <div class="process-step">2</div>
-            </i>
-
-            <h3>Brainstroming ^ Concept</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat ut, autem perferendis cumque doloribus saepe! Accusantium, totam? Voluptate, sequi?</p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-              <div class="process-step">3</div>
-            </i>
-
-            <h3>UI//UX</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat ut, autem perferendis cumque doloribus saepe! Accusantium, totam? Voluptate, sequi?</p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-              <div class="process-step">4</div>
-            </i>
-
-            <h3>Interaction</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat ut, autem perferendis cumque doloribus saepe! Accusantium, totam? Voluptate, sequi?</p>
-          </div>
-        </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer id="main-footer">
       <div class="footer-content container">
         <p>Copyright &copy; 2019. All Rights Reservered</p>
         <div class="social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-github"></i>
           <i class="fab fa-linkedin"></i>
         </div>
       </div>
