@@ -104,7 +104,7 @@ img {
 
 #home {
   &-a {
-    background: #f4f4f4;
+    background: white;
 
     .specials {
       margin-top: 3rem;
@@ -120,10 +120,10 @@ img {
   }
   // Sect B
   &-b {
+    background: #c9c8c8;
     .less {
       display: flex;
       justify-content: center;
-
       .projects-container {
         width: 880px;
         height: 1200px;
